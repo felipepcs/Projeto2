@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Source+Sans+Pro&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Financiamento</title>
+  </head>
+  <body>
+    <div class="container">
+      <form action="">
+        <header>
+          <h1>Calculadora de Financiamento</h1>
+        </header>
+
+        <div class="input">
+          <label for="nome">Nome:</label>
+          <input type="text" id="name" placeholder="Digite o seu nome" />
+        </div>
+
+        <div class="input">
+          <label for="monthlyIncome">Renda Mensal: </label>
+          <input type="number" id="monthlyIncome" placeholder="Digite sua renda mensal" step="0.01" />
+        </div>
+
+        <div class="input">
+          <label for="itemValue">Valor do bem: </label> 
+          <input type="number" id="itemValue" placeholder="Digite o valor do bem desejado" step="0.01" />
+        </div>
+
+        <div class="input">
+          <label for="entranceValue">Valor de Entrada: </label>
+          <input type="number" id="entranceValue" placeholder="Digite o valor de entrada" step="0.01" />
+        </div>
+
+        <div class="input">
+          <label for="interestRate">Taxa de Juros: </label>
+          <input type="number" id="interestRate" placeholder="Digite a taxa de juros" step="0.01" />
+        </div>
+
+        <div class="input">
+          <label for="installmentNumber">Numero de parcelas: </label>
+          <input type="number" id="installmentNumber" placeholder="Digite a quantidade de parcelas" />
+        </div>
+
+        <div class="buttons">
+          <button type="button" id="calcular">Calcular</button>
+        </div>
+
+        <div class="result" id="resultado">
+          <h4 class="resultName" id="resultName"></h4>
+          <p class="resultText" id="resultText"></p>
+        </div>
+        <footer>
+          <p>Projeto Individual TPA</p>
+        </footer>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
